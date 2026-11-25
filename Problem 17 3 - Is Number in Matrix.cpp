@@ -10,7 +10,6 @@ void PrintMatrix(int arr[3][3], short Rows, short Cols)
           for (short j = 0; j < Cols; j++)
           {
              cout << setw(3) << arr[i][j] << " ";
-           // printf("%0*d    " , 2 , arr[i][j]);
 
           }
           cout << "\n";
@@ -32,21 +31,6 @@ short CountNumberInMatrix(int Matrix1[3][3], int Number, short Rows, short Cols)
             }
           return NumberCount;
 }
-/*bool IsNumberInMatrix(int Matrix1[3][3], int Number, short Rows, short Cols)
-{
-           short NumberCount = 0;
-       for (short i = 0; i < Rows; i++)
-           {
-               for (short j = 0; j < Cols; j++)
-                   {
-                      if (Matrix1[i][j] == Number)
-                         {
-                             return true;
-                         };
-                   }
-            }
-          return false;
-}*/
 
 int main() {
 
@@ -65,10 +49,6 @@ int main() {
   else
       cout << "\nNo: It's NOT there.\n";
 
-  /*if (IsNumberInMatrix(Matrix1, Number, 3, 3))
-      cout << "\nYes it is there.\n";
-  else
-      cout << "\nNo: It's NOT there.\n";*/
 
     return 0;
 }
